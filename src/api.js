@@ -62,7 +62,7 @@ export class API {
             Authorization: this.generateAuthToken()
           }
         })
-        .then((r) => new Product(r.data));
+        .then(() => console.log("product deleted"));
   }
 }
 
